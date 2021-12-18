@@ -2,6 +2,8 @@ import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Footer from "../components/Footer";
 import ToTopButton from "../components/ToTopButton";
+import Search from "../components/Search";
+import Buttons from "../components/Buttons";
 
 const Consorcios = () => {
     return (
@@ -25,6 +27,7 @@ const Consorcios = () => {
 
                             {/* <!-- Page Heading --> */}
                             <h1 class="h3 mb-4 text-gray-800">Consorcios</h1>
+                            <Search/>
                             <div class="table-responsive">
                                 <table class="table table-bordered table-striped table-responsive" id="peajetable">
                                 <thead>
@@ -53,13 +56,7 @@ const Consorcios = () => {
                                     </div>
                                 </div>
                             </form>
-                            <div class="row mb-3 d-flex justify-content-center">
-                                    <div class="btn-group btn-group-justified">
-                                        <button type="submit" class="btn btn-success btn-lg">Agregar</button>
-                                        <button type="submit" class="btn btn-warning btn-lg">Editar</button>
-                                        <input type="reset" value="Limpiar formulario" class="btn btn-dark"></input>
-                                    </div>
-                                </div>
+                            <Buttons/>
                         </div>
                         {/* <!-- /.container-fluid --> */}
 

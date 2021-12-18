@@ -2,6 +2,8 @@ import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Footer from "../components/Footer";
 import ToTopButton from "../components/ToTopButton";
+import Search from "../components/Search";
+import Buttons from "../components/Buttons";
 
 const Usuarios = () => {
     return (
@@ -25,6 +27,7 @@ const Usuarios = () => {
 
                             {/* <!-- Page Heading --> */}
                             <h1 class="h3 mb-4 text-gray-800">Usuarios</h1>
+                            <Search/>
                             <div class="table-responsive">
                             <table class="table table-bordered  table-striped table-responsive" id="usertable">
                             <thead>
@@ -101,14 +104,7 @@ const Usuarios = () => {
                                     </div>
                                 </div>
                             </form>
-                            <div class="row mb-3 d-flex justify-content-center">
-                                    <div class="btn-group btn-group-justified">
-                                        <button type="submit" class="btn btn-success btn-lg">Agregar</button>
-                                        <button type="submit" class="btn btn-warning btn-lg">Editar</button>
-                                        <button type="submit" class="btn btn-danger btn-lg">Eliminar</button>
-                                        <input type="reset" value="Limpiar formulario" class="btn btn-dark"></input>
-                                    </div>
-                            </div>
+                            <Buttons/>
                         </div>
                         {/* <!-- /.container-fluid --> */}
 
