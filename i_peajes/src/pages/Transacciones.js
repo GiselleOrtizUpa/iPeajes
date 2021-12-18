@@ -26,6 +26,57 @@ const Transacciones = () => {
                             {/* <!-- Page Heading --> */}
                             <h1 class="h3 mb-4 text-gray-800">Historial de transacciones</h1>
 
+<label for="fechai" class="col-sm-2 col-form-label">Fecha Inicial</label>
+<select id="fechai"class="form-select" aria-label="Default select example">
+  <option selected>21/01/1990</option>
+  <option value="1">21/01/1990</option>
+  <option value="2">21/01/1990</option>
+  <option value="3">21/01/1990</option>
+</select>
+<label for="fechaf" class="col-sm-2 col-form-label">Fecha Final</label>
+<select id="fechaf"class="form-select" aria-label="Default select example">
+  <option selected>22/01/1990</option>
+  <option value="1">21/01/1990</option>
+  <option value="2">21/01/1990</option>
+  <option value="3">21/01/1990</option>
+</select>
+
+<br></br>
+<br></br>
+<br></br>
+
+    <table class="table table-striped">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Peaje</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Via al mar</td>
+      <td>21/01/1990</td>
+      <td>$12.000</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Via al mar</td>
+      <td>21/01/1990</td>
+      <td>$12.000</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Via al mar</td>
+      <td>21/01/1990</td>
+      <td>$12.000</td>
+    </tr>
+  </tbody>
+
+  </table>
+
                         </div>
                         {/* <!-- /.container-fluid --> */}
 
