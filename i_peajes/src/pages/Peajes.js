@@ -52,6 +52,12 @@ const Peajes = () => {
                                 </table>
                             </div>
                             <form >
+                            <div class="row mb-3 d-flex justify-content-center">
+                                    <label for="consorcio" class="col-sm-2 col-form-label">Consorcio</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="consorcio"></input>
+                                    </div>
+                                </div>
                                 <div class="row mb-3 d-flex justify-content-center">
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
                                     <div class="col-sm-9">
