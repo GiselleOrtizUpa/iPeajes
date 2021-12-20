@@ -1,10 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+
 
 const ToTopButton = () => {
     return (
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+        <NavLink className="scroll-to-top rounded" to="#page-top">
+            <i className="fas fa-angle-up"></i>
+        </NavLink>
     );
 }
 
