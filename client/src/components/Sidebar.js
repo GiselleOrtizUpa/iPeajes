@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Sidebar = () => {
@@ -8,10 +8,10 @@ const Sidebar = () => {
 
             {/* <!-- Sidebar - Brand --> */}
             <Link to="/" className="sidebar-brand d-flex align-items-center justify-content-center">
-                <div className=" ">
-                <img  height="40" className="sidebar-brand-icon" src={process.env.PUBLIC_URL + '/logo.png'} alt="none" />
+                <div className="sidebar-brand-icon rotate-n-15">
+                    <i className="fas fa-laugh-wink"></i>
                 </div>
-                
+                <div className="sidebar-brand-text mx-3">iPeajes</div>
             </Link>
 
             {/* <!-- Divider --> */}
@@ -34,11 +34,11 @@ const Sidebar = () => {
 
             {/* <!-- Nav Item - Peajes y consorcios Collapse Menu --> */}
             <li className="nav-item">
-                <NavLink className="nav-link collapsed" to="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i className="fas fa-fw fa-bicycle"></i>
+                    <i class="fas fa-fw fa-bicycle"></i>
                     <span>Peajes y consorcios</span>
-                </NavLink>
+                </a>
                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
                         <Link className="collapse-item" to="/peajes">Peajes</Link>
@@ -58,7 +58,7 @@ const Sidebar = () => {
             {/* <!-- Nav Item - Users --> */}
             <li className="nav-item">
                 <Link className="nav-link" to="/usuarios">
-                <i className="fas fa-fw fa-users"></i>
+                <i class="fas fa-fw fa-users"></i>
                     <span>Ver usuarios</span></Link>
             </li>
 
@@ -72,11 +72,11 @@ const Sidebar = () => {
 
             {/* <!-- Nav Item - Tarjetas RFID Collapse Menu --> */}
             <li className="nav-item">
-                <NavLink className="nav-link collapsed" to="#" data-toggle="collapse" data-target="#collapsePages"
+                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i className="fas fa-fw fa-credit-card"></i>
+                    <i class="fas fa-fw fa-credit-card"></i>
                     <span>Gestiona tu tarjeta</span>
-                </NavLink>
+                </a>
                 <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
                         <Link to="/conseguirtarjeta" className="collapse-item">Consigue tu tarjeta</Link>

@@ -1,34 +1,34 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 const LoginForm = () => {
     return (
-        <form className="user">
-            <div className="form-group">
-                <input type="email" className="form-control form-control-user"
+        <form class="user">
+            <div class="form-group">
+                <input type="email" class="form-control form-control-user"
                     id="exampleInputEmail" aria-describedby="emailHelp"
                     placeholder="Ingresa tu correo..."/>
             </div>
-            <div className="form-group">
-                <input type="password" className="form-control form-control-user"
+            <div class="form-group">
+                <input type="password" class="form-control form-control-user"
                     id="exampleInputPassword" placeholder="Tu contraseña..."/>
             </div>
-            <div className="form-group">
-                <div className="custom-control custom-checkbox small">
-                    <input type="checkbox" className="custom-control-input" id="customCheck"/>
-                    <label className="custom-control-label" for="customCheck">Recuerdame</label>
+            <div class="form-group">
+                <div class="custom-control custom-checkbox small">
+                    <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                    <label class="custom-control-label" for="customCheck">Recuerdame</label>
                 </div>
             </div>
-            <NavLink to="index.html" className="btn btn-success btn-user btn-block">
+            <a href="index.html" class="btn btn-success btn-user btn-block">
                 Iniciar sesión
-            </NavLink>
+            </a>
             <hr/>
-            <NavLink to="index.html" className="btn btn-google btn-user btn-block">
-                <i className="fab fa-google fa-fw"></i> Iniciar con Google
-            </NavLink>
-            <NavLink to="index.html" className="btn btn-facebook btn-user btn-block">
-                <i className="fab fa-facebook-f fa-fw"></i> Iniciar con Facebook
-            </NavLink>
+            <a href="index.html" class="btn btn-google btn-user btn-block">
+                <i class="fab fa-google fa-fw"></i> Iniciar con Google
+            </a>
+            <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                <i class="fab fa-facebook-f fa-fw"></i> Iniciar con Facebook
+            </a>
         </form>
     );
 }

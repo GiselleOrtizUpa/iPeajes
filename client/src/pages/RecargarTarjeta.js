@@ -28,7 +28,7 @@ const RecargarTarjeta = () => {
                             <div class="row g-0">
     <div class="col-md-4">
       
-      <img src="/img/card.png"  width="100%"  alt="tarjeta"></img>
+      <img src="/img/card.png"  width="100%" height="100%"></img>
 
     </div>
     <div class="col-md-8">

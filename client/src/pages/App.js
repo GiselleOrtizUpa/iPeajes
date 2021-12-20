@@ -1,7 +1,6 @@
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import Footer from "../components/Footer";
-import { NavLink } from "react-router-dom";
 
 function App() {
   return (
@@ -25,8 +24,8 @@ function App() {
                     {/* <!-- Page Heading --> */}
                     <div className="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 className="h3 mb-0 text-gray-800">Inicio</h1>
-                        <NavLink to="Login" className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                className="fas fa-download fa-sm text-white-50"></i> Generar reporte</NavLink>
+                        <a href="#" className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                className="fas fa-download fa-sm text-white-50"></i> Generar reporte</a>
                     </div>
 
                     {/* <!-- Content Row --> */}
