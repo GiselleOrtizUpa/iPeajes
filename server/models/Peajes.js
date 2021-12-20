@@ -5,38 +5,38 @@ const PeajesSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    nombrePeaje: {
+    nombre: {
         type: String,
         required: true,
     },
-    latitud: {
-        type: String,
-        required: true,
-    },
-    longitud: {
-        type: String,
-        required: true,
-    },
-    vCategoriaUno: {
-        type: Number,
-        required: true,
-    },
-    vCategoriaDos: {
-        type: Number,
-        required: true,
-    },
-    vCategoriaTres: {
-        type: Number,
-        required: true,
-    },
-    vCategoriaCuatro: {
-        type: Number,
-        required: true,
-    },
-    vCategoriaCinco: {
-        type: Number,
-        required: true,
-    },
+    // latitud: {
+    //     type: Number,
+    //     required: true,
+    // },
+    // longitud: {
+    //     type: Number,
+    //     required: true,
+    // },
+    // vCategoriaUno: {
+    //     type: Number,
+    //     required: true,
+    // },
+    // vCategoriaDos: {
+    //     type: Number,
+    //     required: true,
+    // },
+    // vCategoriaTres: {
+    //     type: Number,
+    //     required: true,
+    // },
+    // vCategoriaCuatro: {
+    //     type: Number,
+    //     required: true,
+    // },
+    // vCategoriaCinco: {
+    //     type: Number,
+    //     required: true,
+    // },
 });
 
 const Peajes = mongoose.model('peajes', PeajesSchema);
